@@ -1,0 +1,45 @@
+# .NET
+
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Node / frontend
+
+node_modules/
+dist/
+build/
+.vite/
+
+# IDE
+
+.vscode/
+.idea/
+
+# Environment / secrets
+
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+
+# Databases / local files
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+
+*.log
+
+# OS
+
+.DS_Store
+Thumbs.db

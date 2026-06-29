@@ -1,0 +1,1 @@
+na koniec wiadmości dodać iv, initialization vector, dodać na początku, do każdej wiadomości, losowa

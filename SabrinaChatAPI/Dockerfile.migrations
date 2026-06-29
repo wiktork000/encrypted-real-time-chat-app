@@ -1,0 +1,16 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+
+WORKDIR /app
+
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
+
+# Copy project file and restore dependencies
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy source code
+COPY . ./
+
+# Run migrations
+ENTRYPOINT ["dotnet", "ef", "database", "update"]
