@@ -118,3 +118,28 @@ My contributions included:
 
 ```bash
 docker compose up --build
+```
+
+### Run frontend locally
+
+```bash
+cd SabrinaChatFront
+npm install
+npm run dev
+```
+
+### Run WebSocket service locally
+
+```bash
+cd SabrinaChatWebSocket
+npm install
+node server.js
+```
+
+### Run backend locally
+
+```bash
+cd SabrinaChatAPI
+dotnet restore
+dotnet run
+```
